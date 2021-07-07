@@ -9,7 +9,7 @@ HTML/CSSはコーディングの自由度が高いが、コーダーが独自の
 本コーディングガイドは以下のドキュメントや書籍を参考に作成している。
 
 ### 基本的なコーディングスタイル
-- Google HTML/CSS Style Guide[https://google.github.io/styleguide/htmlcssguide.html]
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
 
 - 
 ```html
