@@ -112,3 +112,21 @@ NG：midashi gazou
   padding: 0;
 }
 ```
+
+### 適宜コメントを入れる
+スタイルが何のためのものなのか、CSSファイルに適宜コメントを書くようにする。
+
+#### 例
+```css
+/* スタイルのリセット */
+img {
+  vertical-align: left;
+  max-width: 100%;
+}
+
+/* レイアウト用 */
+.inner {
+ width: 960px;
+ margin: 0 auto;
+}
+```
