@@ -76,3 +76,39 @@ id名やクラス名に複数単語からなる語を当てる場合、単語の
 <!--NG(アンダースコアつなぎ(スネークケース))-->
 <h1 class="top_level_heading">ちらし屋ドットコム</h1>
 ```
+
+### クラス名やid名はできるだけ一般的な名前をつけ、名前の短さよりもわかりやすさを優先する
+```html
+<pre class="prettyprint">
+<!--OK(長くてもわかりやすさ優先)-->
+<button class="hamburger-button" id="hamburger-button"></button>
+
+<!--OK(略語でもすぐに意味がわかるものはOK)--->
+<button class="ham-button" id="ham-button"></button>
+
+<!--NG(hbが何を意味するのかわかりづらい)-->
+<button class="hb" id="hb"></button>
+</pre>
+```
+
+### ローマ字での命名はしない
+```
+OK：heading image<br>
+NG：midashi gazou
+```
+
+## CSSのスタイルガイド
+### CSSのフォーマット
+```css
+.selector { 　　/* セレクター名(.selector)と{の間はスペースを一つ空ける */
+  font-size: 16px;  /* プロパティ名(font-size)の後ろのコロン(:)と値(16px)の間はスペース１つ空ける */
+  letter-spacing: 0.1em;
+}　/* 閉じカッコは新しい行に入れる */
+   /* 新たなセレクタを書くときは１行空ける */
+.selector-foo,  /* 複数セレクタを指定する場合は改行をする */
+.selector-bar,
+.selector-baz {　
+  margin: 0; 
+  padding: 0;
+}
+```
