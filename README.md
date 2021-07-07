@@ -1,5 +1,5 @@
 # HELLO 
 hello
 <pre>
- <p class="foo">FOO</p>
+ &lt;p&gt; class="foo">FOO&lt;/p&gt;
 </pre>
