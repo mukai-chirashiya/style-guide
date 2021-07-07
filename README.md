@@ -33,7 +33,7 @@ HTML/CSSはコーディングの自由度が高いが、コーダーが独自の
 タブはインデントに使用しない。
 
 ```html
-<!--OK-->
+<!--OK(スペース2つでインデントがつけられている) -->
 <dl class="form-item">
   <dt class="form-item__title">名前</dt>
   <dd class="form-item__desc">
@@ -41,7 +41,7 @@ HTML/CSSはコーディングの自由度が高いが、コーダーが独自の
   </dd>
 </dl>
 
-<!--NG-->
+<!--NG(インデントが適切に設定されていない)-->
 <dl class="form-item">
 <dt class="form-item__title">名前</dt>
 <dd class="form-item__desc">
@@ -50,16 +50,17 @@ HTML/CSSはコーディングの自由度が高いが、コーダーが独自の
 </dl>
 ```
 ```css
-/* OK */
+/* OK(スペース2つでインデントがつけられている) */
 @meida screen and (max-width: 900px) {
   .logo {
     font-size: 24px;
   }
 }
 
-/* NG */ 
+/* NG(インデントが適切に設定されていない) */ 
 @meida screen and (max-width: 900px) {
 .logo {
-font-size: 24px;
+  font-size: 24px;
+}
 }
 ```
