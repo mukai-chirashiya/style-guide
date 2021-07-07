@@ -49,3 +49,17 @@ HTML/CSSはコーディングの自由度が高いが、コーダーが独自の
 </dd>
 </dl>
 ```
+```css
+/* OK */
+@meida screen and (max-width: 900px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+/* NG */ 
+@meida screen and (max-width: 900px) {
+.logo {
+font-size: 24px;
+}
+```
