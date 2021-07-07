@@ -1,4 +1,4 @@
-# Chirashiya.com, Inc. Style Guide
+# ちらしやドットコム スタイルガイド
 
 ## 目的
 コードの品質のばらつきを減らす。<br>
@@ -63,4 +63,16 @@ HTML/CSSはコーディングの自由度が高いが、コーダーが独自の
   font-size: 24px;
 }
 }
+```
+### 単語の区切りには-(ハイフン)を使う
+id名やクラス名に複数単語からなる語を当てる場合、単語の区切りにはハイフンを用いる。
+```html
+<!--OK-->
+<h1 class="top-level-heading">ちらし屋ドットコム</h1>
+
+<!--NG-->
+<h1 class="topLevelHeading">ちらし屋ドットコム</h1>
+
+<!--NG-->
+<h1 class="top_level_heading">ちらし屋ドットコム</h1>
 ```
