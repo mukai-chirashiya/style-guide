@@ -92,10 +92,10 @@ id名やクラス名に複数単語からなる語を当てる場合、単語の
 ```
 
 ### ローマ字での命名はしない
-```
-OK：heading image<br>
-NG：midashi gazou
-```
+
+OK `heading image`<br>
+NG `midashi gazou`
+
 
 ## CSSのスタイルガイド
 ### CSSのフォーマット
