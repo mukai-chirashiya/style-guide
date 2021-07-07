@@ -79,7 +79,6 @@ id名やクラス名に複数単語からなる語を当てる場合、単語の
 
 ### クラス名やid名はできるだけ一般的な名前をつけ、名前の短さよりもわかりやすさを優先する
 ```html
-<pre class="prettyprint">
 <!--OK(長くてもわかりやすさ優先)-->
 <button class="hamburger-button" id="hamburger-button"></button>
 
@@ -88,7 +87,6 @@ id名やクラス名に複数単語からなる語を当てる場合、単語の
 
 <!--NG(hbが何を意味するのかわかりづらい)-->
 <button class="hb" id="hb"></button>
-</pre>
 ```
 
 ### ローマ字での命名はしない
