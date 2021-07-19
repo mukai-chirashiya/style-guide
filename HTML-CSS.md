@@ -44,28 +44,12 @@ HTML要素は目的に応じて使う。例えば見出しはh1～h6要素、段
   </dd>
 </dl>
 ```
-```html
-<!-- 【NG】インデントが適切に設定されていない -->
-<dl class="form-item">
-<dt class="form-item__title">名前</dt>
-<dd class="form-item__desc">
-<input class="form-item__input text-field" type="text" name="name">
-</dd>
-</dl>
-```
 ```css
 /* OK(スペース2つでインデントがつけられている) */
 @meida screen and (max-width: 900px) {
   .logo {
     font-size: 24px;
   }
-}
-
-/* NG(インデントが適切に設定されていない) */ 
-@meida screen and (max-width: 900px) {
-.logo {
-  font-size: 24px;
-}
 }
 ```
 ### 単語の区切りには-(ハイフン)を使う
@@ -80,10 +64,9 @@ HTMLで最も一般的な記法
 こちらもNGではないが、原則ケバブケースを優先する。 -->
 <h1 class="topLevelHeading">ちらし屋ドットコム</h1>
 ```
-#### ▽例【NG】アンダースコアつなぎ(スネークケース)
-我流コーダーこの記法を好む人は少なくないが、HTMLでこの記法に用いるのは推奨しない。<br>
-(PHPやRubyの変数名の命名にはよく使われる）
 ```html
+<!--　【NG】アンダースコアつなぎ(スネークケース)
+PHPやRubyの変数名の命名にはよく使われる記法だが、HTMLでこの記法に用いるのは推奨しない。 -->
 <h1 class="top_level_heading">ちらし屋ドットコム</h1>
 ```
 
