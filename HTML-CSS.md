@@ -132,7 +132,7 @@ XSS攻撃に対する脆弱性を防ぐため。
 - arrow_ 矢印
 など
 
-## CSSのスタイルガイド（その１）
+## CSSのスタイルガイド（基礎編）
 
 谷拓樹氏の書籍「Web制作者のためのCSS設計の教科書」によると、良いCSSは
 - 予測しやすい
@@ -313,7 +313,7 @@ idはページ内リンクやJavaScriptでのDOM操作のみに使用する。
 Utilityクラスとは、特定の一つのCSSプロパティだけが割り当てられたクラスのこと。<br>
 Utilityクラスは部分的に使うと便利な時があるが、乱用すると細かい調整が必要になった時に修正がしづらいので多様しないことを推奨する。
 
-#### ▽NG 
+#### ▽NG Utilityクラスを中心にスタイリングしている
 ```html
 <div class="mb50 bold bg-gray p10">
 　Hello, world!
@@ -325,7 +325,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 .bold { font-weight: bold; }
 .bg-gray { background-color: #ddd; }
 ```
-#### ▽OK
+#### ▽OK モジュールごとにスタイリングしている
 ```html
 <div class="message-box">
 　Hello, world!
@@ -333,7 +333,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```
 ```css
 .message-box {
-  backgorund-color: #ddd;
+  background-color: #ddd;
   font-weight: bold;
   margin-bottom: 50px;
   padding: 10px;
@@ -376,15 +376,15 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 
 ### その他
 #### 単位の指定について
-- font-size 
+##### font-size 
 基本的に固定値(px, remなど)で設定する。
 スマホ・タブレット用のコーディングで普通の段落文字のfont-sizeをvwで指定するのは避ける。画面幅によって文字の大きさが極端に大きくなることを避けるため。
 ただし、見出しなどの一部の要素でデザインの都合上vwを使ったほうが良さそうな場合はvwでもOK）
 
-- line-height
+##### line-height
 単位なしの相対値で設定する。pxなどの固定値で設定しない。
 
-- letter-spacing
+##### letter-spacing
 単位はemで設定する。
 
 #### Sassについて
@@ -501,5 +501,5 @@ Sassを使用している場合は要素ごとにミックスインでメディ�
 
 ```
 
-## CSSの書き方（実践編）
+## CSSのスタイルガイド（実践編）
 執筆中
