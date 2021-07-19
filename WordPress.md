@@ -9,8 +9,10 @@
 ```html
 <!-- 【OK】 -->
 <img src="<?php echo get_template_directory_uri(); ?>/images/logo.html">
+
 <!-- 【NG】 get_template_directory_uri()関数を使用していない -->
 <img src="/wp-content/themes/my-theme/images/logo.html">
+
 <!-- 【NG】 静的ファイルがファイルがテーマフォルダに格納されていない -->
 <img src="/images/logo.html">
 ```
