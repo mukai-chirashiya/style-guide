@@ -86,7 +86,6 @@ PHPやRubyの変数名などの命名にはよく使われる記法だが、HTML
 <!-- 【NG】なんのためのボタンかわからない -->
 <button class="button1" id="button1"></button>
 ```
-
 ### ローマ字での命名はしない
 
 OK `heading image`<br>
@@ -507,12 +506,15 @@ Sassを使用している場合は要素ごとにミックスインでメディ�
 ## 5. BEM(CSS設計手法)を導入する
 
 CSSは記述の自由度が高いため、一定のルールに基づいて運用しないと簡単にカオス化してしまいます。(“CSS is fragile.” （CSSは壊れやすい）という格言(?)があります。)<br>
-この問題は、特定のCSS設計手法を導入することによって解決できます。CSS設計手法とは、CSSの書き方に対して、一連の規則を定めたものです。<br>
+この問題は、特定のCSS設計手法を導入することによって解決できます。CSS設計手法とは、CSSの書き方に対して一連の規則を定めたものです。<br>
 CSS設計手法の代表的なものには、OOCSS(オーオーシーエスエス)、SMACSS(スマックス)、BEM(ベム)と呼ばれるものがありますが、本スタイルガイドではBEMを推奨の設計手法とします。<br>
 
 ### BEMとは？
-BEMはスタイルを<strong>Block(ブロック)</strong>、<strong>Element(エレメント)</strong>、<strong>Modifier(モディファイア)</strong>の３種類のコンポーネントに分けて設計するCSSの設計手法。
-それぞれの頭文字をとってBEMと呼ばれている<br>
+BEMはロシアのYandex社が開発したCSSのクラスの命名法です。<br>
+広く普及している設計手法なので一度覚えたら様々な場所で使うことができます<br>
+
+BEMではページを構成する要素を<strong>Block(ブロック)</strong>、<strong>Element(エレメント)</strong>、<strong>Modifier(モディファイア)</strong>の３種類の部品に分けて、クラスを命名していきます。
+(BEMの名前の由来はBlock、Element、Modifierの頭文字をとったものです)<br>
 - Block<br>
 再利用可能な独立したパーツとして定義するもの
 - Element<br>
