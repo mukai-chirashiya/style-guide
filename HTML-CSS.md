@@ -537,11 +537,19 @@ block
   
 ### BEM記法のバリエーション--MindBEMdingで書こう
 
-オリジナルのBEM記法では、BlockまたはElementとModifierの区切りを<strong>アンダースコア一つ</strong>でつなぐが、これは少々読みにくいので、代わりにBlockまたはElementとModifierの区切りを<strong>ハイフン2つ</strong>でつなげる書き方が考案された。(MindBEMding記法と呼ばれる。)<br>
-MindBEMding記法の方で書くほうが読みやすいので、MindBEMding記法を採用することを推奨します。
+#### Block or Element とModifierの区切り
+オリジナルの記法では以下のようにBlock or Element とModifierの区切り<strong>アンダースコア一つ</strong>でつなぎます。
 
-- オリジナルの記法の例<br>
- `search-form__button_size_s`
-- MindBEMding記法の例(こちらを推奨)<br>
- `search-form__button--size_s`
+##### オリジナル記法の例(block__element_modifier)
+```
+search-form__button_size_s
+```
+
+しかし、これは少々読みにくいので、代わりに<strong>ハイフン2つ</strong>でつなげるMindBEMdingという書き方が考案されました。
+こちらの記法の方で書くほうが読みやすいので、こちらの記法を採用することを推奨します。
+
+##### MindBEMding記法の例(block__element--modifier)
+```
+search-form__button--size_s
+```
 
