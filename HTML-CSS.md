@@ -525,6 +525,7 @@ block
 
 ### BEMを学ぶ
 まずは以下の記事でBEMの基本を理解するのがおすすめです。<br>
+- [こんなHTMLとCSSのコーディング規約で書きたい #クラスの命名に BEM を使う](https://qiita.com/pugiemonn/items/964203782e1fcb3d02c3#%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%91%BD%E5%90%8D%E3%81%AB-bem-%E3%82%92%E4%BD%BF%E3%81%86)
 - [5分で理解するBEM](https://zenn.dev/knts0/articles/quick-understanding-bem)
 - [【CSS設計】今さら聞けないBEMの基本【初心者・入門】](https://nycreation.jp/blog/archives/289)
 - [BEMによるCSS設計の方法を解説。命名規則から使い方まで。](https://original-game.com/css-bem/)
