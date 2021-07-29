@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top-level-heading">HELLO</div>
+
+    <style>
+        :root {
+            --bp-sp: 600px;
+            --bp-tab: 940px;
+        }
+
+        .top-level-heading {
+            padding: 10px 0;
+            font-size: 38px;
+            letter-spacing: 0.04em;
+            text-align: center;
+            width: var(--bp-sp);
+        }
+
+        @media screen and (max-width: var(--bp-sp)) {
+            .top-level-heading {
+                padding: 5px 0;
+                font-size: 27px
+                
+            }
+        }
+
+        @media screen and (max-width: var(--bp-tab)) {
+            .top-level-heading {
+                font-size: 22px
+            }
+        }
+
+        .data-list {
+            background-color: #ddd;
+            margin-bottom: 50px;
+            padding: 10px;
+        }
+
+        .data-list__title {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 940px) {
+            .data-list {
+                padding: 5px;
+            }
+
+            .data-list__title {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .data-list__title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</body>
+
+</html>

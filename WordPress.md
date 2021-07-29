@@ -51,19 +51,19 @@ WP_Queryに渡すパラーメータは、PHPの配列形式で記述する。
 ## 固定ページの作成
 管理画面のブロックエディタで作成する固定ページは共通テンプレートのpage.phpを使えばよいが、
 HTML/CSSコーディングでつくる必要のある固定ページはpage-{スラッグ名}.phpを作り、HTMLのコーディングはファイルのソースに直書きする。<br>
-※HTMLのソースコードをワードプレスの管理画面の固定ページのブロックエディタや独自のカスタムフィールドから流し込むことはしない。
+<strong>※HTMLのソースコードをワードプレスの管理画面の固定ページのブロックエディタや独自のカスタムフィールドから流し込むことはしない。</strong>
 
 ## カスタム投稿タイプ、カスタムタクソノミー  
-Custom Post Type UIプラグインで作成する。functions.phpの記述で作成しない。
+Custom Post Type UIプラグインで作成する。<strong>functions.phpの記述で作成しない。</strong>
 
 ## カスタムフィールド
-Advanced Cumtom FieldsまたはSmart Custom Fieldsで作成する。functions.phpの記述で作成しない。
+Advanced Cumtom FieldsまたはSmart Custom Fieldsで作成する。<strong>functions.phpの記述で作成しない。</strong>
 
 ## お問合せフォーム  
-プラグインを使う場合はContact Form 7、MW WP Formを使用する。<br>
+プラグインを使う場合はContact Form 7かMW WP Formを使用する。<br>
 プラグインを使用しない場合はmail.phpを使う。
 
-## 既成のテーマをカスタマイズする場合  
+## サードパーティ製のテーマをカスタマイズする場合  
 必ず子テーマを作ってカスタマイズする。親テーマを直接編集しない。
 
 ## Googleアナリティクスやタグマネージャーのスクリプトの設置
