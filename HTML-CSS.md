@@ -126,7 +126,7 @@ XSS攻撃に対する脆弱性を防ぐため。
 HTMLとCSSは同時に書くのは避ける。HTMLとCSSを並行して書くと、設計にブレが生じやすく、コーディングスピードも遅くなる。<br>
 HTMLを書き終わってからCSSを書くほうが、設計に一貫性をもたせやすく、コーディング完了までのスピードも速くなる。
 
-## CSSのスタイルガイド（基礎編）
+## CSSのスタイルガイド【1.基礎編】
 
 谷拓樹氏の書籍「Web制作者のためのCSS設計の教科書」によると、良いCSSは
 - 予測しやすい
@@ -504,12 +504,11 @@ Sassを使用している場合は要素ごとにミックスインでメディ�
 
 ```
 
-## CSSのスタイルガイド【実践編：BEM記法でCSSを書く】
+## CSSのスタイルガイド【2.BEM記法でCSSを書く】
 
-CSSは記述の自由度が高いため、一定のルールに基づいて運用しないと簡単にカオス化してしまいます。(“CSS is fragile.” （CSSは壊れやすい）という格言(?)が存在する。)<br>
+CSSは記述の自由度が高いため、一定のルールに基づいて運用しないと簡単にカオス化してしまいます。(“CSS is fragile.” （CSSは壊れやすい）という格言(?)があります。)<br>
 この問題は、特定のCSS設計手法を導入することによって解決できます。CSS設計手法とは、CSSの書き方に対して、一連の規則を定めたものです。<br>
-CSS設計手法の代表的なものには、OOCSS(オーオーシーエスエス)、SMACSS(スマックス)、BEM(ベム)と呼ばれるものがあります。<br>
-本スタイルガイドでは、BEMを推奨の設計手法とします。<br>
+CSS設計手法の代表的なものには、OOCSS(オーオーシーエスエス)、SMACSS(スマックス)、BEM(ベム)と呼ばれるものがありますが、本スタイルガイドではBEMを推奨の設計手法とします。<br>
 
 ### BEMとは？
 BEMはスタイルを<strong>Block(ブロック)</strong>、<strong>Element(エレメント)</strong>、<strong>Modifier(モディファイア)</strong>の３種類のコンポーネントに分けて設計するCSSの設計手法。
@@ -533,7 +532,7 @@ block
 まずは以下の記事でBEMの基本を理解するのがおすすめです。<br>
 - [5分で理解するBEM](https://zenn.dev/knts0/articles/quick-understanding-bem)
 - [【CSS設計】今さら聞けないBEMの基本【初心者・入門】](https://nycreation.jp/blog/archives/289)
-- [BEMによるCSS設計の方法を解説。命名規則から使い方まで。]https://original-game.com/css-bem/
+- [BEMによるCSS設計の方法を解説。命名規則から使い方まで。](https://original-game.com/css-bem/)
 
 また、余力があれば以下を学ぶと理解が深まります。<br>
 - [Quick Start / Methodology BEM](https://en.bem.info/methodology/quick-start/)<br>
