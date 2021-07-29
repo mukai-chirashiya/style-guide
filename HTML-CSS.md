@@ -537,8 +537,11 @@ block
   
 ### BEM記法のバリエーション--MindBEMdingで書こう
 
-オリジナルのBEM記法では、BlockまたはElementとModifierの区切りをアンダースコア一つでつなぐが、これは少々読みにくいので、代わりにBlockまたはElementとModifierの区切りをハイフン2つでつなげる書き方が考案された。<br>ハイフン２つを用いる記法はMindBEMding記法と呼ばれる。MindBEMding記法の方で書くほうが読みやすいので、MindBEMding記法を採用することを推奨する。
+オリジナルのBEM記法では、BlockまたはElementとModifierの区切りを<strong>アンダースコア一つ</strong>でつなぐが、これは少々読みにくいので、代わりにBlockまたはElementとModifierの区切りを<strong>ハイフン2つ</strong>でつなげる書き方が考案された。(MindBEMding記法と呼ばれる。)<br>
+MindBEMding記法の方で書くほうが読みやすいので、MindBEMding記法を採用することを推奨します。
 
-オリジナルの記法の例 `search-form__button_size_s`<br>
-MindBEMding記法の例(推奨) `search-form__button--size_s`
+- オリジナルの記法の例<br>
+ `search-form__button_size_s`
+- MindBEMding記法の例(こちらを推奨)<br>
+ `search-form__button--size_s`
 
