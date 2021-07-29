@@ -105,9 +105,9 @@ NG `midashi gazou`
 XSS攻撃に対する脆弱性を防ぐため。
 ```html
 <!--【OK】-->
+<a href="/newpage.html" target="_blank" rel="noopener noreferrer">新しいタブで開く</a>
 ```
 ```html
-<a href="/newpage.html" target="_blank" rel="noopener noreferrer">新しいタブで開く</a>
 <!--【NG】-->
 <a href="/newpage.html" target="_blank">新しいタブで開く</a>
 
@@ -122,9 +122,9 @@ XSS攻撃に対する脆弱性を防ぐため。
 - arrow_ 矢印
 など
 
-## HTMLを一通り書いてからCSSを書く
+### HTMLを一通り書いてからCSSを書く
 HTMLとCSSは同時に書くのは避ける。HTMLとCSSを並行して書くと、設計にブレが生じやすく、コーディングスピードも遅くなる。<br>
-HTMLを書き終わってからCSSを書くほうが、設計に一貫性をもたせやすく、コーディング完了までのスピードも速い。
+HTMLを書き終わってからCSSを書くほうが、設計に一貫性をもたせやすく、コーディング完了までのスピードも速くなる。
 
 ## CSSのスタイルガイド（基礎編）
 
@@ -133,6 +133,7 @@ HTMLを書き終わってからCSSを書くほうが、設計に一貫性をも�
 - 保守しやすい
 - 最利用しやすい
 - 拡張しやすい<br>
+
 という特徴がある。このCSSスタイルガイドもこの４点を満たすCSSを書くことを目指す。
 
 ### CSSの基本フォーマット
@@ -384,10 +385,13 @@ NG `line-height: 20px;`
 単位はemで設定する。
 
 ### リセットCSSの使用を推奨する
-新規のコーディングプロジェクトには原則リセットCSSを使用すべきである。
+新規のコーディングプロジェクトには原則リセットCSSを使用するほうが良い。<br>
+おすすめのリセットCSS
+- [destyle.css](https://github.com/nicolas-cusan/destyle.css/blob/master/destyle.css)
+- [HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/)
 
 ### Sassの使用を推奨する
-可能であれば、CSSプリプロセッサのSassを使用する。<br>
+可能であれば、CSSプリプロセッサのSassを使用を推奨する。<br>
 Sassを導入することで、スタイルを書くときの効率や保守性が上がる。<br>
 Sassを使う際は、拡張子が.scssのSCSS記法で書く。
 
