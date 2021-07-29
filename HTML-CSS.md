@@ -521,14 +521,14 @@ Blockの構成要素として定義するもの。親となるブロックの内
 BlockやElementのバリエーションとして定義するもの。見た目、状態、ふるまいなどのバージョン違いを定義する。
 block
 
-## BEMの優れている点
+### BEMの優れている点
 - ルールがシンプルかつ厳格なため、堅牢性が高いCSSを書きやすい。
 - クラス名を見るだけでコンポーネントの依存関係を瞬時に把握できる
 - 慣れればCSSの書き方に迷うことが少なくなるので、開発スピードが上がる。
 - Modifierを使うことで既存のスタイルを容易に拡張できる。
 - 広く普及している設計手法なので一度覚えたら様々な場所で使うことができる。
 
-## BEMを学ぶ
+### BEMを学ぶ
 まずは以下の記事でBEMの基本を理解するのがおすすめです。<br>
 - [5分で理解するBEM](https://zenn.dev/knts0/articles/quick-understanding-bem)
 - [【CSS設計】今さら聞けないBEMの基本【初心者・入門】](https://nycreation.jp/blog/archives/289)
@@ -540,7 +540,7 @@ block
 - [CSS設計完全ガイド(書籍)](https://gihyo.jp/book/2020/978-4-297-11173-1)<br>
   CSS設計のバイブル的な本です。BEMでのHTML/CSSの書き方様々な例を上げてかなり詳しく解説されています。
   
-## BEM記法のバリエーション--MindBEMdingで書こう
+### BEM記法のバリエーション--MindBEMdingで書こう
 
 オリジナルのBEM記法では、BlockまたはElementとModifierの区切りをアンダースコア一つでつなぐが、これは少々読みにくいので、代わりにBlockまたはElementとModifierの区切りをハイフン2つでつなげる書き方が考案された。<br>ハイフン２つを用いる記法はMindBEMding記法と呼ばれる。MindBEMding記法の方で書くほうが読みやすいので、MindBEMding記法を採用することを推奨する。
 
