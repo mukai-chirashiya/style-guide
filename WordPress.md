@@ -85,7 +85,7 @@ HTML/CSSコーディングでつくる必要のある固定ページはpage-{ス
 新規のワードプレステーマを作成する場合や既存のワードプレステーマのテンプレートファイルに変更を加える場合は、ローカル環境で開発するほうが効率が良い。<br>
 WordPressのローカル環境構築には[Local by Flywheel](https://localwp.com/)を使うのが最も簡単でおすすめ。<br>
 インストール方法や使い方は[こちらの記事](https://bazubu.com/local-by-flywheel-33920.html)が参考になる。<br>
-既存のワードプレスサイトのローカルへのコピーにはAll-in-One WP Migrationプラグインを使うと良い。<br>
+既存のワードプレスサイトのローカルへのコピーには<strong>All-in-One WP Migration</strong>プラグインを使うと良い。<br>
 使い方は[こちらの記事](https://www.webdesignleaves.com/pr/wp/wp_all_in_one_wp_migration.html)を参照。
 
 ## テーマフォルダのディレクトリ構成例
