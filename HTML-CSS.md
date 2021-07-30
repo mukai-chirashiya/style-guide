@@ -200,7 +200,7 @@ GoogleのエンジニアPhilip Waltonによる記事「[CSS Architecture](https:
 ### 適宜コメントを入れる
 スタイルが何のためのものなのかわかるようにCSSファイルに適宜コメントを書くようにする。
 
-#### ▽コメントの例
+- コメントの例
 ```css
 /* スタイルのリセット */
 img {
@@ -303,7 +303,7 @@ h1 {
   text-align: center;
 }
 ```
-#### ▽例【OK】要素セレクタにリセット用のスタイルを設定するのはOK
+- ▽例【OK】要素セレクタにリセット用のスタイルを設定するのはOK
 ```css
 /* 【OK】スタイルのリセット */
 img {
@@ -349,11 +349,11 @@ ul {
 ```
 そもそもBEMやSMACSSなどのルールに基づいてクラスを命名していれば、ネストはあまり使う必要がなくなる。
 
-### 原則モジュールごとにスタイルをつける。Utilityクラス中心のスタイリングは非推奨
+### モジュールごとにスタイルをつける
+スタイルは原則としてモジュールごとに定義する。Utilityクラス中心のスタイリングは推奨しない。<br>
 Utilityクラスとは、特定の一つのCSSプロパティだけが割り当てられたクラスのこと。(Helperクラスと言う場合もある。)<br>
 Utilityクラスは部分的に使うと便利な時があるが、乱用すると細かい調整が必要になった時に修正がしづらいので多様しないことを推奨する。
-
-#### ▽NG Utilityクラスを多用してスタイリングしている
+- ▽NG Utilityクラスを多用してスタイリングしている
 ```html
 <div class="mb50 bold bg-gray p10">
 　Hello, world!
@@ -365,7 +365,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 .bold { font-weight: bold; }
 .bg-gray { background-color: #ddd; }
 ```
-#### ▽OK モジュールごとにスタイリングしている
+- ▽OK モジュールごとにスタイリングしている
 ```html
 <div class="message-box">
 　Hello, world!
@@ -382,7 +382,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ### インラインスタイルは原則使用しない
 スタイルの記述場所が分散するため、インラインスタイルは原則使用しない。<br>
 ただし、状況によってはbackground-imageなどはインラインスタイルで使用しても良い。
-#### ▽NG
+- ▽NG (インラインスタイルを使用している)
 ```html
 <div class="message-box" style="color: red">
 　Hello, world!
@@ -396,7 +396,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
   padding: 10px;
 }
 ```
-#### ▽OK (BEMのModifier(後述)を使用している)
+- ▽OK (BEMのModifier(後述)を使用している)
 ```html
 <div class="message-box message-box--color_red">
 　Hello, world!
