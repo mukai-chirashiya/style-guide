@@ -634,7 +634,7 @@ BEMはロシアのYandex社が開発したCSSの設計手法。<br>
 広く普及している設計手法なので一度覚えたら様々な場所で使うことができる。<br>
 
 BEMではページを構成する要素を<strong>Block(ブロック)</strong>、<strong>Element(エレメント)</strong>、<strong>Modifier(モディファイア)</strong>の３種類の部品に分けて、クラスを命名する。<br>
-(BEMtという名前はBlock、Element、Modifierの頭文字をとったもの)<br>
+(BEMという名前はBlock、Element、Modifierの頭文字をとったもの)<br>
 - Block<br>
 再利用可能な独立したパーツとして定義するもの
 - Element<br>
@@ -645,7 +645,6 @@ BlockやElementのバリエーションとして定義するもの。見た目�
 #### Block(ブロック)
 Blockは再利用可能な独立したパーツとして定義されるもの。<br>
 BlockにはできるだけBlockの利用目的に基づいて名前をつける。(例：menu、buttonなど)
-
 ```html
 <!-- 
   headerブロックとlogoブロックを定義
@@ -653,7 +652,10 @@ BlockにはできるだけBlockの利用目的に基づいて名前をつける�
 <header class="header">
   <h1 class="logo">Example</h1>
 </header>
-
+```
+```html
+<!-- main-visualブロック　単語の区切りはハイフン(ケバブケース)を用いる -->
+<div class="main-visual"></div>
 ```
 #### Element(エレメント)
 ElementはBlockの中身として作られる部品である。
