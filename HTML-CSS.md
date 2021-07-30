@@ -661,7 +661,7 @@ BlockにはできるだけBlockの利用目的に基づいて名前をつける�
 ```
 #### Element(エレメント)
 ElementはBlockの中身として作られる部品である。<br>
-Elementを命名するときは、`block-name__element-name`というように、Block名の右に<strong>アンダースコア2つ</strong>を置いてつける。<br>
+Elementを命名するときは、`block-name__element-name`というように、Block名の右に<strong>アンダースコア2つ</strong>を置いて命名する。<br>
 Elementは親となるBlockの外で独立して使うことはできない。Elementは必須ではないため、Blockの中にElementを置かなくても良い。
 
 ```html
