@@ -838,6 +838,6 @@ BEMではネストは禁止ではないが、原則としてネストは最小�
   CSS設計のバイブル的な本です。BEMでのHTML/CSSの書き方様々な例を上げてかなり詳しく解説されています。
 
 ### BEMから派生した設計手法
-- [FLOCSS(フロックス)](https://github.com/hiloki/flocss)
+- [FLOCSS(フロックス)](https://github.com/hiloki/flocss)<br>
   [Web制作者のためのCSS設計の教科書](https://book.impress.co.jp/books/1113101128)の著者・谷 拓樹氏が考案した設計思想。<br>
   BEMの命名規則をベースに、部分的にSMACSSやOOCSSの考え方を取り入れている。プロジェクトのニーズやコーダーの好みによってはこの設計手法を採用しても良い。
