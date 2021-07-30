@@ -647,16 +647,17 @@ BlockやElementのバリエーションとして定義するもの。見た目�
 Blockは再利用可能な独立したパーツとして定義されるもの。<br>
 BlockにはできるだけBlockの利用目的に基づいて名前をつける。(例：menu、buttonなど)
 ```html
+<!-- main-visualブロック　BEMでは単語の区切りはハイフン(ケバブケース)を用いる -->
+<div class="main-visual"></div>
+```
+```html
 <!-- 
   headerブロックとlogoブロックを定義
+  ブロックの中に他のブロックがあってもよい
 -->
 <header class="header">
   <h1 class="logo">Example</h1>
 </header>
-```
-```html
-<!-- main-visualブロック　BEMでは単語の区切りはハイフン(ケバブケース)を用いる -->
-<div class="main-visual"></div>
 ```
 #### Element(エレメント)
 ElementはBlockの中身として作られる部品である。<br>
@@ -702,6 +703,11 @@ Elementは必ず何らかのBlockに属するものとして定義される。<b
   </div>
 </form>
 ```
+
+##### BlockかElementどちらをつくるべきか？
+- Block - 別の場所で再利用される可能性があるものやページ内の他の要素に依存しないもの
+- Element - 親となるブロックの構成要素として、親ブロックの中でしか使われないもの。
+
 #### Modifier(モディファイア)
 BlockやElementのバリエーションとして定義するもの。見た目、状態、ふるまいなどのバージョン違いを定義する。<br>
 - 見た目 `size_s` `color_primary`
