@@ -160,7 +160,7 @@ HTMLを書き終わってからCSSを書くほうが、設計に一貫性をも�
 ## 4. CSSのスタイルガイド
 
 GoogleのエンジニアPhilip Waltonによる記事「[CSS Architecture](https://philipwalton.com/articles/css-architecture/)」では、CSSを設計する時に目指すべき４つのゴールが紹介されている。
-- 予測しやすい - クラス名などからふるまいを想像できる。
+- 予測しやすい - クラス名や構造などからふるまいを容易に想像できる。
 - 再利用しやすい - 必要に応じて他の場所でも同じように使いまわしができる。
 - 保守しやすい - 新たな要素を追加したり、既存の要素を修正したりしたりした時に、他の要素を壊すことがない。
 - 拡張しやすい - 誰かがCSSを後に編集することになっても、容易に編集できる。<br>
@@ -407,7 +407,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 スマホ・タブレット用のコーディングで普通の段落文字のfont-sizeをvwで指定するのは避ける。画面幅によって文字の大きさが極端に大きくなることを避けるため。<br>
 ただし、見出しなどの一部の要素でデザインの都合上vwを使ったほうが良さそうな場合はvwを使用してもよい。
 ```css
-  /* NG font-sizeにvwは原則使わない */
+/* 【NG】 font-sizeにvwは原則使わない */
 @media screen and (max-width: 540px){
   .plain-text-box {
     font-size: 4vw;
@@ -415,7 +415,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 }
 ```
 ```css
-  /* OK font-sizeを固定値で指定している */
+/* 【OK】 font-sizeを固定値で指定している */
 @media screen and (max-width: 540px){
   .plain-text-box {
     font-size: 15px;
@@ -476,7 +476,8 @@ root/
 ```
 
 #### Sassの書き方に関する注意事項
-- BEMでElementやModifireを書く場合は以下のように`&`を用いたクラス名の継承をすることを推奨
+- メディアクエリはMixinを利用して書く。詳しくは次項を参照。
+- BEMでElementやModifireを書く場合は以下のように`&`を用いたクラス名の継承をする
 ```scss
 .data-list {
   background-color: #ddd;
@@ -486,6 +487,9 @@ root/
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 8px;
+    &--color_danger {
+      color: red;
+    }
   }
   &__desc {
     font-size: 15px;
@@ -495,7 +499,7 @@ root/
 ```
 - Extendは使用しない
 ```scss
-// NG
+// 【NG】
 .button {
   padding: 8px;
   width: 300px;
@@ -512,7 +516,7 @@ root/
   width: 200px;
 }
 ```
-- メディアクエリはMixinを利用して書く。詳しくは次項を参照。
+
 
 ### レスポンシブ対応について
 #### ブレイクポイント
