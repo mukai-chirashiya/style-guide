@@ -851,7 +851,7 @@ BEMではネストは禁止ではないが、原則としてネストは最小�
 ```css
 .button--size_s > .button__text
 {
-    font-size: 12px;
+  font-size: 12px;
 }
 ```
 
