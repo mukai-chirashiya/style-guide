@@ -39,10 +39,12 @@ function my_wp_enqueue_scripts() {
 }
 ```
 
-## テンプレートファイルの構成  
-共通部分はheader.php、footer.php、sidebar.phpなどにまとめる。<br>
-header.phpには`<!DOCTYPE html>`の記述も含める。<br>
-必要に応じてテンプレートパーツファイルを作成する。
+## テンプレートファイルの構成について
+テーマファイルのディレクトリ構成例も参照。
+- 共通部分はheader.php、footer.php、sidebar.phpなどにまとめる。<br>
+  header.phpには`<!DOCTYPE html>`の記述も含める。<br>
+- 必要に応じてテンプレートパーツファイルを作成する。<br>
+- headタグ終了直前には`wp_head()`関数、bodyタグ開始直後には`wp_body_open()`関数、bodyタグ終了直前には`wp_footer()`関数への呼び出しを必ず記述する
 
 ## テンプレートファイル内でのワードプレスループ  
 サブループを回す場合は、原則[WP_Query](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/WP_Query)クラスを使う。query_posts関数などの非推奨関数は使わない。
@@ -54,10 +56,10 @@ HTML/CSSコーディングでつくる必要のある固定ページはpage-{ス
 <strong>※HTMLのソースコードをワードプレスの管理画面の固定ページのブロックエディタや独自のカスタムフィールドから流し込むことはしない。</strong>
 
 ## カスタム投稿タイプ、カスタムタクソノミー  
-Custom Post Type UIプラグインで作成する。<strong>functions.phpの記述で作成しない。</strong>
+<strong>Custom Post Type UI</strong>プラグインで作成する。<strong>functions.phpの記述で作成しない。</strong>
 
 ## カスタムフィールド
-Advanced Cumtom FieldsまたはSmart Custom Fieldsで作成する。<strong>functions.phpの記述で作成しない。</strong>
+<strong>Advanced Cumtom Fields</strong>プラグインまたは<strong>Smart Custom Fields</strong>プラグインで作成する。<strong>functions.phpの記述で作成しない。</strong>
 
 ## お問合せフォーム  
 プラグインを使う場合はContact Form 7かMW WP Formを使用する。<br>
@@ -70,6 +72,21 @@ Advanced Cumtom FieldsまたはSmart Custom Fieldsで作成する。<strong>func
 メンテナンス性が悪くなるので、テンプレートファイルに直接scriptタグを記述するのはできるだけ避ける。
 有料テーマの場合でテーマの設定からhead内にスクリプトを挿入できる場合は、そこから挿入する。<br>
 それ以外の場合は、functions.php経由で挿入するか、[Insert Headers and Footers](https://ja.wordpress.org/plugins/insert-headers-and-footers/)などのプラグインを使用してスクリプトを挿入する。
+
+## プラグインの導入について
+利用したことがないプラグインを導入を検討する場合は以下の点に注意する。
+- 最新のWordPressのバージョンと互換性があるか
+- 有効インストール数が十分か
+- 最終更新が古すぎないか
+- そのプラグインを紹介しているブログ記事などを検索し、実際に利用したことのあるユーザーからの評判を確認する
+- 稼働中のサイトに未知のプラグインを導入する場合は、本番環境でいきなり導入する前にローカル環境などで動作確認をすることを強く勧める。
+
+## ローカル環境で開発をする
+新規のワードプレステーマを作成する場合や既存のワードプレステーマのテンプレートファイルに変更を加える場合は、ローカル環境で開発するほうが効率が良い。<br>
+WordPressのローカル環境構築には[Local by Flywheel](https://localwp.com/)を使うのが最も簡単でおすすめ。<br>
+インストール方法や使い方は[こちらの記事](https://bazubu.com/local-by-flywheel-33920.html)が参考になる。<br>
+既存のワードプレスサイトのローカルへのコピーにはAll-in-One WP Migrationプラグインを使うと良い。<br>
+使い方は[こちらの記事](https://www.webdesignleaves.com/pr/wp/wp_all_in_one_wp_migration.html)を参照。
 
 ## テーマフォルダのディレクトリ構成例
 ```
