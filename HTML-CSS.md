@@ -631,7 +631,7 @@ CSS設計手法の代表的なものには、OOCSS(オーオーシーエスエ�
 
 ### BEMとは？
 BEMはロシアのYandex社が開発したCSSの設計手法。<br>
-広く普及している設計手法なので一度覚えたら様々な場所で使うことができる<br>
+広く普及している設計手法なので一度覚えたら様々な場所で使うことができる。<br>
 
 BEMではページを構成する要素を<strong>Block(ブロック)</strong>、<strong>Element(エレメント)</strong>、<strong>Modifier(モディファイア)</strong>の３種類の部品に分けて、クラスを命名する。<br>
 (BEMtという名前はBlock、Element、Modifierの頭文字をとったもの)<br>
@@ -840,4 +840,4 @@ BEMではネストは禁止ではないが、原則としてネストは最小�
 ### BEMから派生した設計手法
 - [FLOCSS(フロックス)](https://github.com/hiloki/flocss)<br>
   [Web制作者のためのCSS設計の教科書](https://book.impress.co.jp/books/1113101128)の著者・谷 拓樹氏が考案した設計思想。<br>
-  BEMの命名規則をベースに、部分的にSMACSSやOOCSSの考え方を取り入れている。プロジェクトのニーズやコーダーの好みによってはこの設計手法を採用しても良い。
+  BEMの命名規則をベースに、部分的にSMACSSやOOCSSの考え方を取り入れている。<br>プロジェクトのニーズやコーダーの好みによってはこの設計手法を採用しても良い。
