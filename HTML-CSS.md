@@ -131,8 +131,9 @@ XSS攻撃に対する脆弱性を防ぐため。
 <img src="./images/sample.png" alt="サンプル画像">
 ```
 
-#### img要素のwidth属性とheight属性について
-必要に応じてimg要素に対してwidth属性やheight属性を記述する。(ページの読み込み速度に有利と言われている)<br>
+#### img要素に必要に応じてwidth属性とheight属性を記述する
+ページの読み込み速度に有利と言われている。<br>
+また、SVG形式の画像や、2xの解像度で書き出した画像のデフォルトの大きさを設定するのに使うと便利。
 ```html
 <!--【OK】width、heightの片方だけでも良い -->
 <img src="./images/sample.png" alt="サンプル画像" width="120">
