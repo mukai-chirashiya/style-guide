@@ -654,7 +654,7 @@ BlockにはできるだけBlockの利用目的に基づいて名前をつける�
 </header>
 ```
 ```html
-<!-- main-visualブロック　単語の区切りはハイフン(ケバブケース)を用いる -->
+<!-- main-visualブロック　BEMでは単語の区切りはハイフン(ケバブケース)を用いる -->
 <div class="main-visual"></div>
 ```
 #### Element(エレメント)
