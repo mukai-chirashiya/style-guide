@@ -473,7 +473,8 @@ root/
   └─ sass/
      ├─base
      │  ├─_define.scss 変数とmixinとWebFontのimport
-     │  └─_reset.scss リセットCSS
+     │  ├─_reset.scss リセットCSS 
+     │  └─_base.scss 追加のリセットスタイル
      ├─layout
      │  ├─_layout.scss レイアウトに関するblock
      │  ├─_header.scss headerでのみ使われるblock
