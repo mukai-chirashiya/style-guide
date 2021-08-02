@@ -443,7 +443,7 @@ OK `line-height: 1.6;`<br>
 NG `line-height: 20px;`
 
 #### letter-spacing
-単位はemで設定する。
+単位はemで設定する。<br>
 OK `letter-spacing: 0.04em`<br>
 NG `letter-spacing: 1px`
 
