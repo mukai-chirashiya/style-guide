@@ -788,7 +788,7 @@ ModifierはBlockやElementを置き換えるものではなく、見た目や状
 ```
 
 ##### 【補足】Block or Element とModifierの区切りについて
-オリジナルの記法では以下のようにBlock or ElementとModifierの区切り<strong>アンダースコア一つ</strong>でつなぐ。
+BEMのオリジナルの記法では以下のようにBlock or ElementとModifierの区切り<strong>アンダースコア一つ</strong>でつなぐ。
 
 ###### オリジナルの記法(block__element_modifier)
 ```
