@@ -28,7 +28,6 @@
   <!--略-->
 </head>
 ```
-
 ```php
 # 【OK】functions.phpにフックを書いてスタイルシートやスクリプトを読み込んでいる
 add_action('wp_enqueue_scripts', 'my_wp_enqueue_scripts');
@@ -38,7 +37,6 @@ function my_wp_enqueue_scripts() {
   wp_enqueue_script('common-script', get_stylesheet_directory_uri(). '/js/script.js', array('jquery'));
 }
 ```
-
 ## テンプレートファイルの構成について
 テーマファイルのディレクトリ構成例も参照。
 - 共通部分はheader.php、footer.php、sidebar.phpなどにまとめる。<br>
