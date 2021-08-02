@@ -764,7 +764,7 @@ Modifierは`key_value`という形式で定義することもできる<br>
 
 #### Modifierは単体では使用できない
 Modifierは既存のBlockやElementのバリエーションを定義するものであるため、Modifier単体で使用することは認められない。<br>
-ModifierはBlockやElementを置き換えるものではなく、見た目や状態などに変更を加えるものであるため、必ず既存のBlockやElementとマルチクラスで用いる。
+ModifierはBlockやElementを置き換えるものではなく、見た目や状態などに変更を加えるものであるため、必ず既存のBlockやElementとのマルチクラスで用いる。
 
 ```html
 <!--
