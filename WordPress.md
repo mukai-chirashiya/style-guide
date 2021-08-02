@@ -38,7 +38,7 @@ function my_wp_enqueue_scripts() {
 }
 ```
 ## テンプレートファイルの構成について
-テーマファイルのディレクトリ構成例も参照。
+テーマフォルダのディレクトリ構成例の項も参照。
 - 共通部分はheader.php、footer.php、sidebar.phpなどにまとめる。<br>
   header.phpには`<!DOCTYPE html>`の記述も含める。<br>
 - 必要に応じてテンプレートパーツファイルを作成する。<br>
@@ -92,7 +92,6 @@ my-theme/
 　├─ css/
 　├─ images/
 　├─ js/
-　├─ sass/
 　├─ sass/
 　├─ template-parts/
 　├─ 404.php
