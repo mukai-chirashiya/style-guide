@@ -109,11 +109,6 @@ PHPやRubyの変数名などの命名にはよく使われる記法だが、HTML
 OK `heading image`<br>
 NG `midashi gazou`
 
-
-```html
-<!--【OK】画像への説明が不要ならばalt属性は空欄でもよい（alt属性自体の省略は認められない） -->
-<img src="./images/foo.png" alt="">
-```
 ### a要素にtarget="_blank"属性を付ける場合は、rel="noopener noreferrer"属性もつける
 XSS攻撃に対する脆弱性を防ぐため。
 ```html
