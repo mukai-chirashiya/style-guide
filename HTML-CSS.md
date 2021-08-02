@@ -327,18 +327,18 @@ idはページ内リンクやJavaScriptでのDOM操作のみに使用する。
 /* 【NG】idにスタイルを当てている */
 #top-level-heading {
   padding: 10px 0;
+  text-align: center;
   font-size: 20px;
   letter-spacing: 0.04em;
-  text-align: center;
 }
 ```
 ```css
 /* 【NG】idセレクタ経由でスタイルを当てている */
 #main h1 {
   padding: 10px 0;
+  text-align: center;
   font-size: 20px;
   letter-spacing: 0.04em;
-  text-align: center;
 }
 ```
 
@@ -392,10 +392,10 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```
 ```css
 .message-box {
-  backgorund-color: #ddd;
-  font-weight: bold;
-  margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-color: #ddd;
 }
 ```
 - ▽OK (BEMのModifier(後述)を使用している)
@@ -406,10 +406,10 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```
 ```css
 .message-box {
-  background-color: #ddd;
-  font-weight: bold;
-  margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-color: #ddd;
 }
 .message-box--color_red {
   color: red;
@@ -495,13 +495,13 @@ root/
 - BEMでElementやModifireを書く場合は以下のように`&`を用いたクラス名の継承をする
 ```scss
 .data-list {
-  background-color: #ddd;
-  margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 50px;
+  background-color: #ddd;
   &__title {
+    margin-bottom: 8px;
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 8px;
     &--color_danger {
       color: red;
     }
@@ -526,9 +526,9 @@ root/
 }
 .small-button {
   @extend .button;
-  font-size: 12px;
   padding: 5px;
   width: 200px;
+  font-size: 12px;
 }
 ```
 
@@ -546,9 +546,9 @@ Sassを使用している場合は要素ごとにミックスインをインク�
 /* CSSの場合 モジュールごとにメディアクエリを指定　*/
 .top-level-heading {
   padding: 10px 0;
+  text-align: center;
   font-size: 38px;
   letter-spacing: 0.04em;
-  text-align: center;
 }
 
 @media screen and (max-width: 940px){
@@ -565,9 +565,9 @@ Sassを使用している場合は要素ごとにミックスインをインク�
 }
 
 .data-list {
-  background-color: #ddd;
   margin-bottom: 50px;
   padding: 10px;
+  background-color: #ddd;
 }
 .data-list__title {
   font-weight: bold;
@@ -609,9 +609,9 @@ Sassを使用している場合は要素ごとにミックスインをインク�
 //要素ごとにミックスインをインクルードする
 .top-level-heading {
   padding: 10px 0;
+  text-align: center;
   font-size: 24px;
   letter-spacing: 0.04em;
-  text-align: center;
   @include tab {
     padding: 5px 0;
     font-size: 38px;
@@ -622,9 +622,9 @@ Sassを使用している場合は要素ごとにミックスインをインク�
 }
 
 .data-list {
-  background-color: #ddd;
   margin-bottom: 50px;
   padding: 10px;
+  background-color: #ddd;
   @include tab {
     padding: 5px;
   }
