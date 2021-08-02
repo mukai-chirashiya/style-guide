@@ -221,19 +221,19 @@ img {
 ```css
 /*【NG】無駄な重複がある。 */
 .text {
+  margin-bottom: 20px;
   color: #333;
   font-size: 24px;
   line-height: 1.6;
   letter-spacing: 0.01em;
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 900px) {
   .text {
+    margin-bottom: 14px; 
     color: #333; /* ※重複 */
     font-size: 20px; 
     line-height: 1.6; /* ※重複 */
     letter-spacing: 0.01em; /* ※重複 */
-    margin-bottom: 14px; 
   }
 }
 ```
