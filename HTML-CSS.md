@@ -145,8 +145,8 @@ XSS攻撃に対する脆弱性を防ぐため。
 <img src="./images/sample.png" alt="サンプル画像">
 ```
 ```html
-<!--【OK】画像に関する説明が不要であれば、alt属性の値は空でもOK(alt属性事態の省略はNG) -->
-<img src="./images/sample.png" alt="サンプル画像">
+<!--【OK】画像に関する説明が不要であれば、alt属性の値は空でもOK(※alt属性自体の省略はNG) -->
+<img src="./images/foo.png" alt="">
 ```
 
 #### img要素に必要に応じてwidth属性とheight属性を記述する
