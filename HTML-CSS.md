@@ -87,7 +87,7 @@ PHPやRubyの変数名などの命名にはよく使われる記法だが、HTML
 ```
 
 ### クラス名やid名は目的に応じたわかりやすい名前をつける
-以下ハンバーガーボタンを例に挙げる。
+ハンバーガーボタンのクラスのネーミング例
 ```html
 <!-- 【OK】長くてもわかりやすさ優先 -->
 <button class="hamburger-button" id="hamburger-button"></button>
