@@ -470,9 +470,9 @@ Visual Studio Codeを使用している場合、Live Sass Compilerという拡�
 - ディレクトリ構成例
 ```
 root/
-　├─ css/
+  ├─ css/
   │  └─style.css コンパイル後のファイル
-　└─ sass/
+  └─ sass/
      ├─base
      │  ├─_define.scss 変数とmixinとWebFontのimport
      │  └─_reset.scss リセットCSS
@@ -481,14 +481,14 @@ root/
      │  ├─_header.scss headerでのみ使われるblock
      │  └─_footer.scss footerでのみ使われるblock
      ├─component
-     │  ├─_heading.css 汎用見出しblock
-     │  ├─_button.css 汎用ボタンblock
-     │  └─_component.css その他汎用block
+     │  ├─_heading.scss 汎用見出しblock
+     │  ├─_button.scss 汎用ボタンblock
+     │  └─_component.scss その他汎用block
      ├─page 
-     │  ├─_top.css トップページでのみ使われるblock
-     │  ├─_about.css aboutページでのみ使われるblock
-     │  ├─_company.css companyページでのみ使われるblock
-     │  └─_contact.css contactページでのみ使われるblock
+     │  ├─_top.scss トップページでのみ使われるblock
+     │  ├─_about.scss aboutページでのみ使われるblock
+     │  ├─_company.scss companyページでのみ使われるblock
+     │  └─_contact.scss contactページでのみ使われるblock
      └─style.scss すべてのSassファイルをimportするファイル
 ```
 
