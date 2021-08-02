@@ -795,7 +795,7 @@ BEMのオリジナルの記法では以下のようにBlock or ElementとModifie
 search-form__button_size_s
 ```
 
-しかし、これは少々読みにくいので、代わりに<strong>ハイフン2つ</strong>でつなげる<strong>MindBEMding</strong>という書き方が考案された。
+しかし、これは少々読みにくいので、代わりに<strong>ハイフン2つ</strong>でつなげる[MindBEMding](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/))という書き方が考案された。
 こちらの記法で書くほうが読みやすいので、本スタイルガイドではこちらの記法を採用することを推奨している。
 
 ###### MindBEMding記法(block__element--modifier)
