@@ -267,9 +267,9 @@ idセレクタや要素セレクタにスタイルを当てることのデメリ
 /* 【OK】クラスセレクタにスタイルを当てている */
 .top-level-heading {
   padding: 10px 0;
+  text-align: center;
   font-size: 20px;
   letter-spacing: 0.04em;
-  text-align: center;
 }
 ```
 ### クラスの命名には一貫した命名規則を採用する(BEMを推奨)
