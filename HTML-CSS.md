@@ -204,7 +204,7 @@ GoogleのエンジニアPhilip Waltonによる記事「[CSS Architecture](https:
 ```css
 /* スタイルのリセット */
 img {
-  vertical-align: left;
+  vertical-align: top;
   max-width: 100%;
 }
 
