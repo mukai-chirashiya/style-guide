@@ -746,6 +746,31 @@ ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を�
     <button class="search-form__button search-form__button--disabled">Search</button>
 </form>
 ```
+```scss
+.search-form {
+  //︙
+  //略
+  //︙
+
+  //search-form__buttonのスタイル
+  &__button {
+    color: white;
+    width: 180px;
+    padding: 14px;
+    background-color: navy;
+    border-radius: 5px;
+
+    // search-form__buttonのバリエーションとして、
+    // disabledというモディファイア のスタイルを定義
+    &---disabled {
+      background-color: #f4f4f4;
+      color: #888;
+      cursor: default;
+    }
+  }
+}
+
+```
 
 #### Key_value
 Modifierは`key_value`という形式で定義することもできる<br>
@@ -775,8 +800,8 @@ ModifierはBlockやElementを置き換えるものではなく、見た目や状
     <!-- 正しい。 `search-form__button`というエレメントに`search-form__button--size_m`というモディファイアがつけられている -->
     <button class="search-form__button search-form__button--size_m">Search</button>
 </form>
-
 ```
+
 ```html
 <!-- 
   間違い。変更を加えられるクラス`search-form`が抜けている
