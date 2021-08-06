@@ -886,7 +886,7 @@ Mixというテクニックを使うことで、BlockとElementのスタイル�
   width: 900px;
   margin: 0 auto;
  
-  //特定のblock内での配置に関するスタイルはelementとして定義
+  //headerブロック内での配置に関するスタイルはelementとして定義
   &__button {
     position: absolute;
     right: 20px;
