@@ -752,24 +752,36 @@ ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を�
 ```
 ```scss
 .search-form {
-  //︙
-  //略
-  //︙
+  //search-formブロックのスタイルを定義
+  padding: 16px;
+  background-color: #fff;
 
-  //search-form__buttonのスタイル
+  &--focused {
+    // search-formブロックのバリエーションとして、
+    // focusedというモディファイアのスタイルを定義
+    background-color: #ffffe0;
+  }
+
   &__button {
+    //search-form__buttonブロックのスタイル
     color: white;
     width: 180px;
     padding: 14px;
     background-color: navy;
     border-radius: 5px;
+    &:hover {
+      opacity: 0.8;
+    }
 
-    // search-form__buttonのバリエーションとして、
-    // disabledというモディファイア のスタイルを定義
     &---disabled {
+      // search-form__buttonエレメントのバリエーションとして、
+      // disabledというモディファイアのスタイルを定義
       background-color: #f4f4f4;
       color: #888;
       cursor: default;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
