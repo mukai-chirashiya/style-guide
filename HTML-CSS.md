@@ -382,10 +382,10 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```
 ```css
 .message-box {
-  background-color: #ddd;
-  font-weight: bold;
-  margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-color: #ddd;
 }
 ```
 ### インラインスタイルは原則使用しない
