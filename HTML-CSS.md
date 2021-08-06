@@ -737,7 +737,7 @@ BlockやElementのバリエーションとして定義するもの。見た目�
 - 状態 `disabled` `focused`
 - ふるまい `directions_left-top`
 
-ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を書いて定義する。
+ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を置いて命名する。
 - ブロックの場合 `block--modifier`<br>
 - エレメントの場合 `block__element--modifier`
 
