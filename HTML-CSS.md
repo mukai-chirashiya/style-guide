@@ -913,7 +913,7 @@ BEMではネストは禁止ではないが、原則としてネストは最小�
 - [Quick Start / Methodology BEM](https://en.bem.info/methodology/quick-start/)<br>
   BEMの公式ドキュメント。Quick Startのページだけでも目を通す価値はある。(英語が苦手な方はGoogle翻訳でどうぞ)
 - 【おすすめ】[CSS設計完全ガイド(書籍)](https://gihyo.jp/book/2020/978-4-297-11173-1)<br>
-  CSS設計のバイブル的な本。BEMでのHTML/CSSの書き方様々な例を上げてかなり詳しく解説されている。
+  CSS設計のバイブル的な本。BEMでのHTML/CSSの書き方を様々な例を上げてかなり詳しく解説している。
 
 ### BEMから派生した設計手法
 - [FLOCSS(フロックス)](https://github.com/hiloki/flocss)<br>
