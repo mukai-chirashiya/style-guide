@@ -89,7 +89,7 @@ PHPやRubyの変数名などの命名にはよく使われる記法だが、HTML
 ```
 
 #### 目的に応じたわかりやすい名前をつける
-ハンバーガーボタンのクラスのネーミング例
+ハンバーガーボタンのクラス/IDのネーミング例
 ```html
 <!-- 【OK】長くてもわかりやすさ優先 -->
 <button class="hamburger-button" id="hamburger-button"></button>
@@ -231,6 +231,7 @@ img {
   line-height: 1.6;
   letter-spacing: 0.01em;
 }
+
 @media screen and (max-width: 900px) {
   .text {
     margin-bottom: 14px; 
@@ -250,6 +251,7 @@ img {
   letter-spacing: 0.01em;
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 900px) {
   .text {
     font-size: 20px;
@@ -315,6 +317,7 @@ img {
   vertical-align: top;
   max-width: 100%;
 }
+
 ul {
   list-style-type: none;
 }
@@ -415,6 +418,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
   font-weight: bold;
   background-color: #ddd;
 }
+
 .message-box--color_red {
   color: red;
 }
@@ -529,6 +533,7 @@ root/
   text-align: center;
   font-size: 16px;
 }
+
 .small-button {
   @extend .button;
   padding: 5px;
