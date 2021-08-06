@@ -111,17 +111,7 @@ PHPやRubyの変数名などの命名にはよく使われる記法だが、HTML
 OK `heading image`<br>
 NG `midashi gazou`
 
-### a要素にtarget="_blank"属性を付ける場合は、rel="noopener noreferrer"属性もつける
-XSS攻撃に対する脆弱性を防ぐため。
-```html
-<!--【OK】-->
-<a href="https://www.example.com/" target="_blank" rel="noopener noreferrer">新しいタブで開く</a>
-```
-```html
-<!--【NG】-->
-<a href="https://www.example.com/" target="_blank">新しいタブで開く</a>
 
-```
 ### 画像の取り扱いについて
 
 - 画像を使わずともCSSで再現できそうなものはできるだけCSSで再現するようにする。一般的にはCSSのほうがきれいに表示され、読み込み速度も速い。
@@ -168,6 +158,18 @@ XSS攻撃に対する脆弱性を防ぐため。
 - bg_ 　背景
 - arw_ 矢印<br>
 など
+
+### a要素にtarget="_blank"属性を付ける場合は、rel="noopener noreferrer"属性もつける
+XSS攻撃に対する脆弱性を防ぐため。
+```html
+<!--【OK】-->
+<a href="https://www.example.com/" target="_blank" rel="noopener noreferrer">新しいタブで開く</a>
+```
+```html
+<!--【NG】-->
+<a href="https://www.example.com/" target="_blank">新しいタブで開く</a>
+
+```
 
 ### HTMLを一通り書いてからCSSを書く
 HTMLとCSSは同時に書くのは避ける。HTMLとCSSを並行して書くと、設計にブレが生じやすく、コーディングスピードも遅くなる。<br>
