@@ -44,14 +44,37 @@ function my_wp_enqueue_scripts() {
 - 必要に応じてテンプレートパーツファイルを作成する。<br>
 - headタグ終了直前には`wp_head()`関数、bodyタグ開始直後には`wp_body_open()`関数、bodyタグ終了直前には`wp_footer()`関数への呼び出しを必ず記述する
 
-## テンプレートファイル内でのワードプレスループ  
-サブループを回す場合は、原則[WP_Query](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/WP_Query)クラスを使う。query_posts関数などの非推奨関数は使わない。
-WP_Queryに渡すパラーメータは、PHPの配列形式で記述する。
-
 ## 固定ページの作成
 管理画面のブロックエディタで作成する固定ページは共通テンプレートのpage.phpを使えばよいが、
 HTML/CSSコーディングでつくる必要のある固定ページはpage-{スラッグ名}.phpを作り、HTMLのコーディングはファイルのソースに直書きする。<br>
 <strong>※HTMLのソースコードをワードプレスの管理画面の固定ページのブロックエディタや独自のカスタムフィールドから流し込むことはしない。</strong>
+
+## テーマフォルダのディレクトリ構成例
+```
+my-theme/
+　├─ css/
+　├─ images/
+　├─ js/
+　├─ sass/
+　├─ template-parts/
+　├─ 404.php
+　├─ archive.php
+　├─ footer.php
+　├─ front-page.php
+　├─ functions.php
+　├─ header.php
+　├─ index.php
+　├─ page.php
+　├─ page-xxx.php
+　├─ page-yyy.php
+　├─ page-zzz.php
+　├─ single.php
+　└─ single-xxx.php
+```
+## テンプレートファイル内でのワードプレスループ  
+サブループを回す場合は、原則[WP_Query](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/WP_Query)クラスを使う。query_posts関数などの非推奨関数は使わない。
+WP_Queryに渡すパラーメータは、PHPの配列形式で記述する。
+
 
 ## カスタム投稿タイプ、カスタムタクソノミー  
 <strong>Custom Post Type UI</strong>プラグインで作成する。<strong>functions.phpの記述で作成しない。</strong>
@@ -85,28 +108,5 @@ WordPressのローカル環境構築には[Local by Flywheel](https://localwp.co
 インストール方法や使い方は[こちらの記事](https://bazubu.com/local-by-flywheel-33920.html)が参考になる。<br>
 既存のワードプレスサイトのローカルへのコピーには<strong>All-in-One WP Migration</strong>プラグインを使うと良い。<br>
 使い方は[こちらの記事](https://www.webdesignleaves.com/pr/wp/wp_all_in_one_wp_migration.html)を参照。
-
-## テーマフォルダのディレクトリ構成例
-```
-my-theme/
-　├─ css/
-　├─ images/
-　├─ js/
-　├─ sass/
-　├─ template-parts/
-　├─ 404.php
-　├─ archive.php
-　├─ footer.php
-　├─ front-page.php
-　├─ functions.php
-　├─ header.php
-　├─ index.php
-　├─ page.php
-　├─ page-xxx.php
-　├─ page-yyy.php
-　├─ page-zzz.php
-　├─ single.php
-　└─ single-xxx.php
-```
 
 
