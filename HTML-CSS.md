@@ -617,11 +617,11 @@ Sassを使用している場合は要素ごとにミックスインをインク�
   text-align: center;
   font-size: 24px;
   letter-spacing: 0.04em;
-  @include tab {
+  @include mq-tab {
     padding: 5px 0;
     font-size: 38px;
   }
-  @include sp {
+  @include mq-sp {
     font-size: 22px;
   }
 }
@@ -630,16 +630,16 @@ Sassを使用している場合は要素ごとにミックスインをインク�
   margin-bottom: 50px;
   padding: 10px;
   background-color: #ddd;
-  @include tab {
+  @include mq-tab {
     padding: 5px;
   }
   &__title {
     font-weight: bold;
     font-size: 24px;
-    @include tab {
+    @include mq-tab {
       font-size: 20px;
     }
-    @include sp {
+    @include mq-sp {
       font-size: 16px;
     }
   }
