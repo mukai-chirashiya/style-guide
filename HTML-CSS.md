@@ -872,8 +872,8 @@ Mixというテクニックを使うことで、BlockとElementのスタイル�
 ```html
 <div class="header">
     <!--
-        `button`ブロックに`header`ブロックの`button`エレメント(=`header__button`)をミックスしているため、
-        buttonブロックでありつつもheader__buttonエレメントでもある。
+        `button`ブロックに`header`ブロックの`button`エレメント(=`header__button`)をミックスしている
+        buttonブロックでありつつもheader__buttonエレメントでもある状態。
     -->
     <button type="button" class="button header__button"></button>
 </div>
