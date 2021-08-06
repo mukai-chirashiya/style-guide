@@ -702,7 +702,7 @@ Elementは親となるBlockの外で独立して使うことはできない。El
 ```
 ##### Elementのネストについて
 
-Elementはネストして利用することができるが、Elementは必ず何らかのBlockに属するものとして命名される。<br>
+Elementはネストして利用することができるが、Elementは必ず`block__element`という形式で、何らかのBlockに属するものとして命名される。<br>
 そのため、`block__element1__element2`といった、エレメントが何か他のエレメントに属する意味になるような命名はすべきではない。
 ```html
 <!--
@@ -849,7 +849,7 @@ search-form__button--size_s
 ```
 ### 「Mix」を使ってBlockとElementのスタイルを組み合わせる
 Mixというテクニックを使うことで、BlockとElementのスタイルを組み合わせることができる。<br>
-他の場所でも再利用できるような`button`というパーツそのもののスタイルはBlockとして、配置に関することなどコンテキストに依存するスタイルはElement`header__button`として記述するとよい。<br>
+例えば以下のような例では、他の場所でも再利用できるような`button`というパーツそのもののスタイルはBlockとして、配置に関することなどコンテキストに依存するスタイルはElement`header__button`として記述するとよい。<br>
 このようにMixを用いることでBlockの独立性を保ちつつ、コンテキストに応じた柔軟なスタイリングが可能になる。
 
 ```html
