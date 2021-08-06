@@ -501,7 +501,7 @@ root/
 
 #### Sassの書き方に関する注意事項
 - メディアクエリはMixinを利用して書く。詳しくは次項を参照。
-- BEMでElementやModifireを書く場合は以下のように`&`を用いたクラス名の継承をする
+- BEMでElementやModifierを書く場合は以下のように`&`を用いたクラス名の継承をする
 ```scss
 .data-list {
   padding: 10px;
