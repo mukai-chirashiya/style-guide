@@ -599,14 +599,17 @@ Sassを使用している場合は要素ごとにミックスインをインク�
 // Sass(SCSS記法)の場合
 
 //事前にミックスインを定義
-@mixin tab {
-  @media screen and (max-width: 940px){
+$bp-tab: 940px;
+$bp-sp: 600px;
+
+@mixin mq-tab {
+  @media screen and (max-width: $bp-tab){
     @content;
   }
 }
 
-@mixin sp {
-  @media screen and (max-width: 600px){
+@mixin mq-sp {
+  @media screen and (max-width: $bp-sp){
     @content;
   }
 }
