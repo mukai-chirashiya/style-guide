@@ -763,7 +763,7 @@ ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を�
   }
 
   &__button {
-    //search-form__buttonブロックのスタイル
+    //search-form__buttonエレメントのスタイル
     color: white;
     width: 180px;
     padding: 14px;
