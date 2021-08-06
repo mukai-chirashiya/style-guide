@@ -507,6 +507,7 @@ root/
   padding: 10px;
   margin-bottom: 50px;
   background-color: #ddd;
+
   &__title {
     margin-bottom: 8px;
     font-weight: bold;
@@ -515,6 +516,7 @@ root/
       color: red;
     }
   }
+
   &__desc {
     font-size: 15px;
   }
@@ -579,6 +581,7 @@ Sassを使用している場合は要素ごとにミックスインをインク�
   padding: 10px;
   background-color: #ddd;
 }
+
 .data-list__title {
   font-weight: bold;
   font-size: 24px;
@@ -588,6 +591,7 @@ Sassを使用している場合は要素ごとにミックスインをインク�
   .data-list {
     padding: 5px;
   }
+
   .data-list__title {
     font-size: 20px;
   }
@@ -625,10 +629,12 @@ $bp-sp: 600px;
   text-align: center;
   font-size: 24px;
   letter-spacing: 0.04em;
+
   @include mq-tab {
     padding: 5px 0;
     font-size: 38px;
   }
+
   @include mq-sp {
     font-size: 22px;
   }
@@ -638,15 +644,19 @@ $bp-sp: 600px;
   margin-bottom: 50px;
   padding: 10px;
   background-color: #ddd;
+
   @include mq-tab {
     padding: 5px;
   }
+
   &__title {
     font-weight: bold;
     font-size: 24px;
+
     @include mq-tab {
       font-size: 20px;
     }
+
     @include mq-sp {
       font-size: 16px;
     }
@@ -777,6 +787,7 @@ ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を�
     padding: 14px;
     background-color: navy;
     border-radius: 5px;
+
     &:hover {
       opacity: 0.8;
     }
@@ -787,6 +798,7 @@ ModifierはBlockまたはElementの右に<strong>ハイフン２つ</strong>を�
       background-color: #f4f4f4;
       color: #888;
       cursor: default;
+
       &:hover {
         opacity: 1;
       }
@@ -876,6 +888,7 @@ Mixというテクニックを使うことで、BlockとElementのスタイル�
   color: white;
   text-align: center;
   font-size: 16px;
+
   &:hover {
     opacity: 0.8;
   }
@@ -900,8 +913,7 @@ Mixというテクニックを使うことで、BlockとElementのスタイル�
 BEMではネストは禁止ではないが、原則としてネストは最小限にすることを推奨している。<br>
 ネストが適切な場面としては、Elementのスタイルを親となるBlockの状態に応じて変更する必要がある場合である。
 ```css
-.button--size_s > .button__text
-{
+.button--size_s > .button__text {
   font-size: 12px;
 }
 ```
