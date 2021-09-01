@@ -715,6 +715,22 @@ Elementは親となるBlockの外で独立して使うことはできない。El
   <button class="search-form__button">Search</button>
 </form>
 ```
+```html
+<!-- bullet-list ブロック -->
+<ul class="bullet-list">
+  <!-- bulle-listブロックの中のbullet-list__itemエレメント -->
+  <li class="bullet-list__item">
+    <!-- bulle-listブロックの中のbullet-list__linkエレメント -->
+    <a class="bullet-list__link" href="#">項目１</a>
+  </li>
+  <li class="bullet-list__item">
+    <a class="bullet-list__link" href="#">項目２</a>
+  </li>
+  <li class="bullet-list__item">
+    <a class="bullet-list__link" href="#">項目３</a>
+  </li>
+</ul>
+```
 ##### Elementのネストについて
 
 Elementはネストして利用することができるが、Elementは必ず`block__element`という形式で、何らかのBlockに属するものとして命名される。<br>
