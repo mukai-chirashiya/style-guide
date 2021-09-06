@@ -550,6 +550,37 @@ root/
 PC用、タブレット用、スマホ用の３種類のデバイスに対応できるようにスタイルを組む。ブレイクポイントはデザイン応じて適したものを選ぶ。 <br>
 以前主流だったブレイクポイントが786pxの一点のみという設計は時代遅れになりつつあるので推奨しない。<br>
 
+##### Sassでのブレイクポイントの例
+```scss
+//define breakpoints
+$bp-tab1: 1024px; //タブレット用メインブレイクポイント
+$bp-tab2: 768px;  //タブレット用サブブレイクポイント
+$bp-sp1: 600px;　 //スマホ用メインブレイクポイント
+$bp-sp2: 480px;   //スマホ用サブブレイクポイント
+
+//define mixins
+@mixin mq-tab1 {
+    @media screen and (max-width: $bp-tab1){
+        @content;
+    }
+}
+@mixin mq-tab2 {
+    @media screen and (max-width: $bp-tab2){
+        @content;
+    }
+}
+@mixin mq-sp1 {
+    @media screen and (max-width: $bp-sp1){
+        @content;
+    }
+}
+@mixin mq-sp2 {
+    @media screen and (max-width: $bp-sp2){
+        @content;
+    }
+}
+```
+
 #### メディアクエリはモジュール単位で記述する。
 メディアクエリをブレイクポイントごとにすべてまとめて記述する方法は表示速度の点ではやや有利だが、
 メンテナンス性が良くないのでモジュールごとに記述すること推奨する。<br>
@@ -604,6 +635,7 @@ Sassを使用している場合は要素ごとにミックスインをインク�
 }
 
 ```
+
 ```scss
 // Sass(SCSS記法)の場合
 
@@ -664,6 +696,8 @@ $bp-sp: 600px;
 }
 
 ```
+
+
 
 ## 5. BEM(CSS設計手法)を導入する
 
