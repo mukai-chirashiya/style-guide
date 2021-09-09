@@ -366,7 +366,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```html
 <div class="mb50 bold bg-gray p10">
 　Hello, world!
-<div>
+</div>
 ```
 ```css
 .mb50 { margin-bottom: 50px; }
@@ -378,7 +378,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```html
 <div class="message-box">
 　Hello, world!
-<div>
+</div>
 ```
 ```css
 .message-box {
@@ -395,7 +395,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```html
 <div class="message-box" style="color: red">
 　Hello, world!
-<div>
+</div>
 ```
 ```css
 .message-box {
@@ -409,7 +409,7 @@ Utilityクラスは部分的に使うと便利な時があるが、乱用する�
 ```html
 <div class="message-box message-box--color_red">
 　Hello, world!
-<div>
+</div>
 ```
 ```css
 .message-box {
